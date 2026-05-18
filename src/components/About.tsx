@@ -3,8 +3,7 @@ import { useInView } from '../hooks/useInView'
 import { GraduationCap, Code2, Dumbbell, Music } from 'lucide-react'
 
 const stats = [
-  { value: 'CS + Math at Rutgers University' /*, label: 'Double B.S.' */},
-//   { value: 'Rutgers University', label: 'University' },
+  { value: 'CS + Math at Rutgers University' },
 ]
 
 const interests = [
@@ -105,7 +104,7 @@ export default function About() {
               className="grid grid-cols-1 gap-3"
             >
               {stats.map((s) => (
-                <div key={s.label} className="glass rounded-xl p-4 text-center">
+                <div key={s.value} className="glass rounded-xl p-4 text-center">
                   <div className="text-white font-bold text-base">{s.value}</div>
                 </div>
               ))}
