@@ -1,229 +1,25 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDKKF1BQBV"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-WDKKF1BQBV');
-		</script>
-		
-		<title>Atul Marichetty</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<link rel="icon" type="image/jpeg" href="yearbookPic.jpeg"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<!-- <section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who I am</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section> -->
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Atul Marichetty</h1>
-							<p>Rutgers Student</p>
-							<ul class="actions">
-								<li><a href="#three" class="button scrolly">Contact Me</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="yearbookPic.jpeg" class="image"><img src="yearbookPic.jpeg" alt="Picture of Me" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Rutgers Student</h2>
-									<p>Hello! I am currently studying Computer Science and Mathematics in the School of Arts in Sciences at Rutgers University.</p>
-									<ul class="actions">
-										<!-- <li><a href="https://www.cs.rutgers.edu/" target="_blank" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-						
-						<section>
-							<a href="Atul_Marichetty.pdf" class="image"><img src="Atul_Headshot.JPG" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>My Resume</h2>
-									<!--<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>-->
-									<ul class="actions">
-										<li><a target = "_blank" href="Atul_Marichetty.pdf" class="button">Resume</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						
-						<section>
-							<a href="marketImage.webp" class="image"><img src="marketImage.webp" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Market Anomaly Detection Project</h2>
-									<p>Below is a link to a walkthrough of one of my favorite projects while interning at Headstarter! I designed a machine learning pipeline to predict potential market anomalies with preprocessing, feature engineering, and
-model selection, achieving a final predictive accuracy of 90%</p>
-									<ul class="actions">
-										<li><a href="https://youtu.be/nVMLCpCdh2A" target = "_blank" class="button">Video Link</a></li>
-										<li><a href="https://github.com/atul-11-m/Market-Anomaly-Detection-Project" target = "_blank" class="button">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					
-						<section>
-							<a href="exchangePT.jpg" class="image"><img src="exchangePT.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Additonal Information</h2>
-									<p>In my free time I love to code, hang out with friends, play basketball, listen to music, and go to the gym.</p>
-									<ul class="actions">
-										<!-- <li><a href="" target = "_blank" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Feel free to reach out with any questions!</p>
-							<div class="split style1">
-								<section>
-									<form id="contact-form">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" required />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="email" name="email" id="email" required />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5" required></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><button type="submit" class="button">Send Message</button></li>
-										</ul>
-										<p id="form-status" style="margin-top:1em; display:none;"></p>
-									</form>
-									<script>
-										const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyCO_tA3Lny7WcLloZ8D2-i5S2EA2HaT7gQfJXk8c64M-g0_zMlEiWsUW3pGTP-cHvs/exec';
-
-										document.getElementById('contact-form').addEventListener('submit', function(e) {
-											e.preventDefault();
-											const status = document.getElementById('form-status');
-											const btn = this.querySelector('button[type="submit"]');
-
-											btn.textContent = 'Sending...';
-											btn.disabled = true;
-											status.style.display = 'none';
-
-											const payload = {
-												name:    document.getElementById('name').value,
-												email:   document.getElementById('email').value,
-												message: document.getElementById('message').value
-											};
-
-											fetch(SCRIPT_URL, {
-												method: 'POST',
-												body: JSON.stringify(payload)
-											})
-											.then(res => res.json())
-											.then(data => {
-												if (data.result === 'success') {
-													status.textContent = 'Message sent!';
-													status.style.color = '#a0a8ff';
-													this.reset();
-												} else {
-													throw new Error('Unexpected response');
-												}
-											})
-											.catch(() => {
-												status.textContent = 'Something went wrong. Please email me directly.';
-												status.style.color = '#ff6b6b';
-											})
-											.finally(() => {
-												status.style.display = 'block';
-												btn.textContent = 'Send Message';
-												btn.disabled = false;
-											});
-										});
-									</script>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:atul.s.marichetty@gmail.com">atul.s.marichetty@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(908) 391-1208</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-												<li><a href="https://github.com/atul-11-m" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/atul.marichetty/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/atul-marichetty-0a6636320/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/yearbookPic.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atul Marichetty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDKKF1BQBV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WDKKF1BQBV');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
 
 
