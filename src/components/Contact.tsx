@@ -130,7 +130,7 @@ export default function Contact() {
             </button>
 
             {status === 'success' && (
-              <p className="text-green-400 text-sm text-center">✅ Message sent! I'll get back to you soon.</p>
+              <p className="text-green-400 text-sm text-center">✅ Message sent!</p>
             )}
             {status === 'error' && (
               <p className="text-red-400 text-sm text-center">❌ Something went wrong. Please email me directly.</p>
