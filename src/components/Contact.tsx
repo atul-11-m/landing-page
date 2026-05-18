@@ -115,7 +115,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                placeholder="Enter your message here TEST"
+                placeholder="Enter your message here"
                 className="w-full glass rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:ring-2 focus:ring-brand-500/50 transition-all resize-none"
               />
             </div>
