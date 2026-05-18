@@ -3,9 +3,8 @@ import { useInView } from '../hooks/useInView'
 import { GraduationCap, Code2, Dumbbell, Music } from 'lucide-react'
 
 const stats = [
-  { value: 'CS + Math', label: 'Double Major' },
-  { value: 'SAS', label: 'School of Arts & Sciences' },
-  { value: 'Rutgers', label: 'University' },
+  { value: 'CS + Math at Rutgers University' /*, label: 'Double B.S.' */},
+//   { value: 'Rutgers University', label: 'University' },
 ]
 
 const interests = [
@@ -103,12 +102,11 @@ export default function About() {
               variants={fadeUp}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="grid grid-cols-3 gap-3"
+              className="grid grid-cols-1 gap-3"
             >
               {stats.map((s) => (
                 <div key={s.label} className="glass rounded-xl p-4 text-center">
-                  <div className="text-white font-bold text-base mb-1">{s.value}</div>
-                  <div className="text-white/40 text-xs leading-tight">{s.label}</div>
+                  <div className="text-white font-bold text-base">{s.value}</div>
                 </div>
               ))}
             </motion.div>
