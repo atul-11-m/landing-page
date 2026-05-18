@@ -28,7 +28,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <a href="#hero" className="font-display text-xl font-bold text-gradient">AM</a>
+        <a href="#hero" className="w-10 h-10 rounded-full border border-brand-500/50 flex items-center justify-center font-display text-base font-bold text-gradient hover:border-brand-400 hover:shadow-[0_0_12px_rgba(99,102,241,0.4)] transition-all duration-200">AM</a>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
