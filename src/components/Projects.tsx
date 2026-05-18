@@ -11,17 +11,33 @@ interface Project {
 }
 
 const projects: Project[] = [
+    
+  {
+    title: 'Money Mentor: AI-Powered Financial Advisor',
+    description:
+      `An AI‑powered chatbot that turns personal finance into a conversation. Users upload transactions, get instant insights,
+       visual breakdowns, and personalized saving tips—making financial literacy simple, engaging, and actionable.`,
+    image: '/moneyMentorThumbnail.jpg',
+    tags: ['Python', 'Flask', 'SQLite', 'Pandas', 'Gemini API', 'React', 'Vite', 'Tailwind CSS', 'Recharts'],
+    links: [
+      { label: 'Video Walkthrough', href: 'https://drive.google.com/file/d/1uO9UwHseECPVhrEjc_Uv5c-uir0h4x_Y/view?usp=sharing', icon: Youtube },
+      { label: 'GitHub Repo', href: 'https://github.com/krishkb06/MoneyMentor', icon: Github },
+    ],
+   },
+   
   {
     title: 'Market Anomaly Detection',
     description:
-      'Designed a machine learning pipeline to predict potential market anomalies with preprocessing, feature engineering, and model selection — achieving a final predictive accuracy of 90% while interning at Headstarter.',
+      `Designed a machine learning pipeline to predict potential market anomalies with preprocessing, feature engineering,
+       and model selection — achieving a final predictive accuracy of 90% while interning at Headstarter.`,
     image: '/marketImage.webp',
-    tags: ['Python', 'Machine Learning', 'Feature Engineering', 'Scikit-learn'],
+    tags: ['Python', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'Streamlit', 'pickle', 'Pandas', 'NumPy', 'Groq API'],
     links: [
       { label: 'Video Walkthrough', href: 'https://youtu.be/nVMLCpCdh2A', icon: Youtube },
       { label: 'GitHub Repo', href: 'https://github.com/atul-11-m/Market-Anomaly-Detection-Project', icon: Github },
     ],
   },
+
 ]
 
 const fadeUp = {
@@ -55,7 +71,7 @@ export default function Projects() {
           animate={inView ? 'visible' : 'hidden'}
           className="font-display text-4xl md:text-5xl font-bold text-white mb-16"
         >
-          Things I've built.
+          Featured Projects
         </motion.h2>
 
         <div className="space-y-12">
@@ -130,7 +146,7 @@ export default function Projects() {
             className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors duration-200 text-sm"
           >
             <Github size={16} />
-            See more on GitHub
+            See more projects on GitHub
             <ExternalLink size={12} />
           </a>
         </motion.div>

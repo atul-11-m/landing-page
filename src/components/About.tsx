@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
-import { GraduationCap, Code2, Dumbbell, Music } from 'lucide-react'
+import { Code2, Dumbbell, Music } from 'lucide-react'
+import { MdSportsBasketball } from "react-icons/md";
+
 
 const stats = [
   { value: 'CS + Math at Rutgers University' },
 ]
 
 const interests = [
-  { icon: Code2, label: 'Coding' },
-  { icon: GraduationCap, label: 'Learning' },
-  { icon: Dumbbell, label: 'Gym & Basketball' },
+  { icon: Code2, label: 'Artificial Intelligence' },
+  { icon: MdSportsBasketball, label: 'Basketball' },
+  { icon: Dumbbell, label: 'Gym' },
   { icon: Music, label: 'Music' },
 ]
 
@@ -49,7 +51,7 @@ export default function About() {
               animate={inView ? 'visible' : 'hidden'}
               className="font-display text-4xl md:text-5xl font-bold text-white mb-6 leading-tight"
             >
-              Passionate about building things that matter.
+              About Me
             </motion.h2>
 
             <motion.p
@@ -59,10 +61,10 @@ export default function About() {
               animate={inView ? 'visible' : 'hidden'}
               className="text-white/60 text-lg leading-relaxed mb-8"
             >
-              Hello! I'm a Computer Science and Mathematics student at{' '}
-              <span className="text-white font-medium">Rutgers University</span> in the
-              School of Arts and Sciences. I love solving challenging problems through
-              code and building projects that combine mathematics with machine learning.
+              Hello! I am a Computer Science and Mathematics student at Rutgers University
+              passionate about building AI-driven systems that bridge technology, data, and business outcomes.
+              I love solving challenging problems through code and building projects that combine mathematics 
+              with machine learning.
             </motion.p>
 
             <motion.p
